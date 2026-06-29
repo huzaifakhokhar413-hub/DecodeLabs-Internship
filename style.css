@@ -1,0 +1,236 @@
+:root {
+    --mocha-mousse: #A5956F;
+    --ethereal-blue: #A0D4E0;
+    --moonlit-grey: #F2F0EA;
+    --text-dark: #2C2C2C;
+    --text-light: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--moonlit-grey);
+    color: var(--text-dark);
+    font-size: clamp(1rem, 1.2vw, 1.125rem);
+    line-height: 1.6;
+}
+
+h1, h2, h3, .logo {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--mocha-mousse);
+}
+
+.top-header {
+    background-color: var(--text-light);
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    border-bottom: 4px solid var(--ethereal-blue);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-menu a:hover {
+    color: var(--mocha-mousse);
+}
+
+.mobile-menu-btn {
+    display: none;
+}
+
+.hero-section {
+    background-color: var(--mocha-mousse);
+    color: var(--text-light);
+    height: 360px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero-content h1 {
+    color: var(--text-light);
+    font-size: clamp(2rem, 4vw, 3.5rem);
+}
+
+.primary-btn {
+    background-color: var(--ethereal-blue);
+    color: var(--text-dark);
+    border: none;
+    padding: 12px 28px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.primary-btn:hover {
+    opacity: 0.8;
+}
+
+.main-container {
+    padding: 40px 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.side-panel {
+    background-color: var(--text-light);
+    padding: 25px;
+    border-radius: 8px;
+}
+
+.category-list {
+    list-style: none;
+    margin-top: 15px;
+}
+
+.category-list li {
+    border-bottom: 1px solid var(--moonlit-grey);
+}
+
+.cat-link {
+    display: block;
+    padding: 10px 0;
+    text-decoration: none;
+    color: var(--text-dark);
+    transition: 0.3s;
+}
+
+.cat-link:hover {
+    color: var(--ethereal-blue);
+    padding-left: 5px;
+}
+
+.content-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.card {
+    background-color: var(--text-light);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-image {
+    height: 200px;
+    background-color: var(--ethereal-blue);
+    overflow: hidden;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-text {
+    padding: 25px;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 15px;
+    text-decoration: none;
+    color: var(--mocha-mousse);
+    font-weight: 700;
+}
+
+.contact-section {
+    margin-top: 20px;
+}
+
+.contact-card {
+    background-color: var(--text-light);
+    padding: 40px;
+    border-radius: 8px;
+    border-top: 5px solid var(--mocha-mousse);
+}
+
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group input, .form-group textarea {
+    padding: 12px;
+    border: 1px solid var(--moonlit-grey);
+    border-radius: 4px;
+    margin-top: 8px;
+}
+
+.bottom-footer {
+    background-color: var(--text-dark);
+    color: var(--moonlit-grey);
+    text-align: center;
+    padding: 30px;
+}
+
+@media (max-width: 767px) {
+    .nav-menu {
+        display: none;
+    }
+    .mobile-menu-btn {
+        display: block;
+        background: none;
+        border: 2px solid var(--mocha-mousse);
+        padding: 5px 10px;
+        cursor: pointer;
+    }
+}
+
+@media (min-width: 1024px) {
+    .main-container {
+        display: grid;
+        grid-template-columns: 280px 1fr;
+        max-width: 1300px;
+        margin: 0 auto;
+    }
+
+    .content-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .contact-section {
+        grid-column: 2;
+    }
+}

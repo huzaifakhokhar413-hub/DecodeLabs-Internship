@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Industrial Project 1 | DecodeLabs</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="top-header">
+        <div class="logo">DecodeLabs</div>
+        <nav aria-label="Main Navigation">
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#work">Our Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="mobile-menu-btn">Menu</button>
+    </header>
+
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>The Future of Digital Craft</h1>
+            <p>Building responsive architectures with warm, grounded aesthetics.</p>
+            <button class="primary-btn">Explore Now</button>
+        </div>
+    </section>
+
+    <main class="main-container">
+        
+        <aside class="side-panel">
+            <h3>Categories</h3>
+            <ul class="category-list">
+                <li><a href="#" class="cat-link">UI/UX Design</a></li>
+                <li><a href="#" class="cat-link">Frontend Logic</a></li>
+                <li><a href="#" class="cat-link">Web Standards</a></li>
+                <li><a href="#" class="cat-link">Accessibility</a></li>
+            </ul>
+        </aside>
+
+        <section class="content-grid">
+            
+            <article class="card">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1526498460520-4c246339dccb?auto=format&fit=crop&q=80&w=600" alt="Mobile Development">
+                </div>
+                <div class="card-text">
+                    <h2>Mobile-First Paradigm</h2>
+                    <p>Designing for the mobile web using flexible HTML and CSS rules.</p>
+                    <a href="#" class="read-more">Read More &rarr;</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80&w=600" alt="Clean Coding">
+                </div>
+                <div class="card-text">
+                    <h2>Semantic Integrity</h2>
+                    <p>Coding for AI and screen readers to ensure universal access.</p>
+                    <a href="#" class="read-more">Read More &rarr;</a>
+                </div>
+            </article>
+
+        </section>
+
+        <section class="contact-section" id="contact">
+            <div class="contact-card">
+                <h2>Get In Touch</h2>
+                <p>Have a project in mind? Let's build something great together.</p>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="primary-btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bottom-footer">
+        <p>Build the Future &copy; 2026 DecodeLabs</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
